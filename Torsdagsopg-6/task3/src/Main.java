@@ -13,7 +13,7 @@ public class Main {
         ArrayList<String>teacherCanTeach=new ArrayList<>();
         ArrayList<String>teacherCurrentcourse=new ArrayList<>();
         teacherCanTeach.add("Spanish");
-        teacherCurrentcourse.add("Math");
+        teacherCurrentcourse.add("Java 1.0");
 
         Student s1= new Student("Malte",Studentpassedcourse,Studentcurrentcourse);
         Teacher t1= new Teacher("Tess",teacherCanTeach,teacherCurrentcourse);
@@ -22,7 +22,7 @@ public class Main {
         persons.add(t1);
 
         for (Person p: persons) {
-            
+
         }
 
 
