@@ -8,7 +8,7 @@ public class Main {
 
 
 Car c1=new GasolineCar("123434","Audi","A6",5,20);
-Car c2=new ElectricCar("00000", "Tesla","Model X long Range",4,100,580);
+Car c2=new ElectricCar("00000", "Tesla","Model X long Range",5,100,580);
 Car c3= new DieselCar("333333","Toyota","Yaris", 4,35,true );
 
 fleet.addCar(c1);

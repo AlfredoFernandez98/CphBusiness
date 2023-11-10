@@ -33,7 +33,7 @@ public  class ElectricCar extends ACar{
 
         int fee=0;
         int kmPrLitre= (int)Math.floor(100/(getWhPrKm()/91.25));
-        System.out.println(kmPrLitre);
+
         if((kmPrLitre >= 20) && (kmPrLitre <= 50)){
             fee=330;
         } else if ((kmPrLitre>=15) && (kmPrLitre <=19)) {
@@ -50,6 +50,8 @@ public  class ElectricCar extends ACar{
 
             fee=10470;
 
+        } else if (kmPrLitre>=51) {
+            fee = 0;
         }
 
         return fee;
@@ -58,9 +60,11 @@ public  class ElectricCar extends ACar{
     @Override
 
     public String toString(){
-        return super.toString()+ "\n Batterikapacity: "+ getBatteryCapacityKWh()+
+        return  "\n HERE ARE THE ELECTRIC-CARS: "  +
+                "\n "+super.toString()+
+                "\n Batterikapacity: "+ getBatteryCapacityKWh()+
                 "\n MaxRange: "+ getMaxRange()+"km"+
                 "\n Wh/Km: " + getWhPrKm()+
-                "\n getregistrationfee: "+ getRegistrationFee();
+                "\n Registrationfee: "+ getRegistrationFee()+"kr."+"\n";
     }
 }

@@ -13,12 +13,12 @@ import java.util.ArrayList;
    public int getTotalRegistrationFeeForFleet() {
         int r=0;
         for (Car i: fleet) {
-           r= i.getRegistrationFee();
+            r += i.getRegistrationFee();
 
 
 
         }
-       System.out.println("hej" + r);
+
         return r;
     }
 
